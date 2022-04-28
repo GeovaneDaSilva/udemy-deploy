@@ -20,9 +20,6 @@ const getTime = async(req, res) => {
 
 
 
-
-
-
 module.exports = {
   getTime
 };
