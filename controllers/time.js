@@ -9,7 +9,7 @@ const getTime = async(req, res) => {
 
     res.json({
       ok: true,
-      msg: 'Deploy IS READY IN JENKINS --ALRIGHT!',
+      msg: 'Deployment is success --JENKINS!',
     })
   } catch (error) {
     console.log(error);
