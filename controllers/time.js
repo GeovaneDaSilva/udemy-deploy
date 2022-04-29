@@ -9,7 +9,7 @@ const getTime = async(req, res) => {
 
     res.json({
       ok: true,
-      msg: 'Deploy Udemy course!',
+      msg: 'Deploy IS READY IN JENKINS --ALRIGHT!',
     })
   } catch (error) {
     console.log(error);

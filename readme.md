@@ -22,8 +22,9 @@ Click Save and Apply
 ```
 ##### Step 3 -  Create the Free Style Node JS project .
 ``` sh
-Git URL - https://github.com/GeovaneDaSilva/udemy-deploy.git
-WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
+Git URL - https://{token}@github.com/GeovaneDaSilva/udemy-deploy.git
+
+WebHook Connection URL - http://{IP_INSTANCE_AWS}:{PORT_AWS}/github-webhook/ (push)
 BUILD - npm install  // to download all the dependecines 
   
 ```
@@ -32,13 +33,13 @@ BUILD - npm install  // to download all the dependecines
 source files **/*.gz
 remote directory
 Exec Command 
-mv /var/lib/jenkins/workspace/
-cd /var/lib/jenkins/workspace/node-deploy
-docker rmi -f nodeimage;
-docker stop nodecontainer;
-docker rm nodecontainer;
-docker build -t nodeimage .;
-docker run -d -p 3050:3000 --name nodecontainer nodeimage;
+mv /var/lib/jenkins/workspace/;
+cd /var/lib/jenkins/workspace/udemy-deploy;
+docker rmi -f courseimage;
+docker stop coursecontainer;
+docker rm coursecontainer;
+docker build -t courseimage .;
+docker run -d -p 3050:3000 --name coursecontainer courseimage;
 ```
 ##### Step 5 - Docker File in Node Js server 
 ``` sh 
