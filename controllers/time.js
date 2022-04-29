@@ -9,7 +9,7 @@ const getTime = async(req, res) => {
 
     res.json({
       ok: true,
-      msg: 'Deploy nodeJs --HEROKU',
+      msg: 'Deployment is success --JENKINS!',
     })
   } catch (error) {
     console.log(error);
