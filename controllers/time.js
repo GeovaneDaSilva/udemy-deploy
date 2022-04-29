@@ -9,7 +9,7 @@ const getTime = async(req, res) => {
 
     res.json({
       ok: true,
-      msg: 'Deploy nodeJs',
+      msg: 'Deploy Udemy course!',
     })
   } catch (error) {
     console.log(error);
@@ -17,9 +17,6 @@ const getTime = async(req, res) => {
   }
 
 }
-
-
-
 
 
 
